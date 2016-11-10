@@ -2,6 +2,7 @@
 
 
 <%
+
 String pag= new String("pages/home.jsp");
 	if(request.getAttribute("page")!=null)
 	{

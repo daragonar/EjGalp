@@ -1,6 +1,10 @@
+<div class="container"><div class="row text-center">
+	<h2>Pago <%= this.getServletContext().getAttribute("pago") %>  ( <%= this.getServletContext().getAttribute("cantidad") %> &euro; )  -  Combustible : <%= this.getServletContext().getAttribute("combustible") %> </h2>
+
 <div class="card"  style="margin: 50px 100px;" z="5">
 <div class="card-hero color-black text-center" id="tarjeta" >
 		<h1>Repostando ....</h1>
+	</div></div>
 	</div></div>
 	<div class='clearfix'><br> </div>
 <div class="container">

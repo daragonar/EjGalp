@@ -1,4 +1,5 @@
-<div class="container"><div class="row">
+<div class="container"><div class="row text-center">
+<h2> Pago : <%= this.getServletContext().getAttribute("pago") %>  ( <%= this.getServletContext().getAttribute("cantidad") %> &euro; ) -  Seleccione Combustible </h2>
 <form action="Repostar" method="post">
 <div class="col-md-3">
 <div class="card  " z="5">

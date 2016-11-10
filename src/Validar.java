@@ -1,6 +1,7 @@
 
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,6 +41,8 @@ public class Validar extends HttpServlet {
 		{
 			if((request.getParameter("cantidad")!=null && !request.getParameter("cantidad").isEmpty()) && (request.getParameter("tarjeta")!=null && !request.getParameter("tarjeta").isEmpty()))
 			{
+				this.getServletContext().setAttribute("pago", "Tarjeta" );
+				this.getServletContext().setAttribute("cantidad", request.getParameter("cantidad"));
 				request.setAttribute("page", "pages/combustible.jsp");
 			}else
 			{
@@ -50,6 +53,8 @@ public class Validar extends HttpServlet {
 		{
 			if(request.getParameter("cantidad")!=null && !request.getParameter("cantidad").isEmpty())
 			{
+				this.getServletContext().setAttribute("pago", "Efectivo" );
+				this.getServletContext().setAttribute("cantidad", request.getParameter("cantidad"));
 				request.setAttribute("page", "pages/combustible.jsp");
 			}else{
 				request.setAttribute("page", "pages/home.jsp");
