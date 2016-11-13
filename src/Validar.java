@@ -43,10 +43,9 @@ public class Validar extends HttpServlet {
 			{
 				this.getServletContext().setAttribute("pago", "Tarjeta" );
 				this.getServletContext().setAttribute("cantidad", request.getParameter("cantidad"));
-				request.setAttribute("page", "pages/combustible.jsp");
-			}else
-			{
-				request.setAttribute("page", "pages/home.jsp");
+				//request.setAttribute("page", "pages/combustible.jsp");
+				request.setAttribute("page", "combustible");
+				
 			}
 		}
 		if(request.getParameter("efect")!=null)
@@ -55,9 +54,7 @@ public class Validar extends HttpServlet {
 			{
 				this.getServletContext().setAttribute("pago", "Efectivo" );
 				this.getServletContext().setAttribute("cantidad", request.getParameter("cantidad"));
-				request.setAttribute("page", "pages/combustible.jsp");
-			}else{
-				request.setAttribute("page", "pages/home.jsp");
+				request.setAttribute("page", "combustible");
 			}
 			
 		}

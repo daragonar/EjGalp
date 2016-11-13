@@ -1,5 +1,5 @@
 <div class="container"><div class="row text-center">
-	<h2>Pago <%= this.getServletContext().getAttribute("pago") %>  ( <%= this.getServletContext().getAttribute("cantidad") %> &euro; )  -  Combustible : <%= this.getServletContext().getAttribute("combustible") %> </h2>
+	<h2>Pago <%= application.getAttribute("pago") %>  ( <%= application.getAttribute("cantidad") %> &euro; )  -  Combustible : <%= application.getAttribute("combustible") %> </h2>
 
 <div class="card"  style="margin: 50px 100px;" z="5">
 <div class="card-hero color-black text-center" id="tarjeta" >

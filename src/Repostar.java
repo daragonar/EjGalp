@@ -40,26 +40,26 @@ public class Repostar extends HttpServlet {
 		{
 			response.getWriter().append("Gasoleo");
 			this.getServletContext().setAttribute("combustible", "gasoleo");
-			request.setAttribute("page", "pages/repostando.jsp");
+			request.setAttribute("page", "reposta");
 			
 		}
 		if(request.getParameter("gasoleoplus")!=null)
 		{
 			response.getWriter().append("gasoleoplus");
 			this.getServletContext().setAttribute("combustible", "gasoleo +");
-			request.setAttribute("page", "pages/repostando.jsp");
+			request.setAttribute("page", "reposta");
 			
 		}if(request.getParameter("gasolina95")!=null)
 		{
 			response.getWriter().append("gasolina95");
 			this.getServletContext().setAttribute("combustible", "gasolina 95");
-			request.setAttribute("page", "pages/repostando.jsp");
+			request.setAttribute("page", "reposta");
 			
 		}if(request.getParameter("gasolina98")!=null)
 		{
 			response.getWriter().append("gasolina98");
 			this.getServletContext().setAttribute("combustible", "gasolina 98");
-			request.setAttribute("page", "pages/repostando.jsp");
+			request.setAttribute("page", "reposta");
 			
 		}
 		request.getRequestDispatcher("index.jsp").forward(request, response);
